@@ -1,0 +1,8 @@
+#Installing requirements for AI360 with  pip3 install -r requirements.txt
+numpy>=1.16 
+tqdm
+aif360
+sklearn
+IPython
+matplotlib
+cvxpy
