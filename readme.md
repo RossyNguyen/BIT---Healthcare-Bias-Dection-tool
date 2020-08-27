@@ -25,3 +25,4 @@ style="width:500px;height:500px;margin-left:200px;margin-right:auto"/>
 
 >The analysis component of BIT would be developed using python or spring boot and would be available to UI component as service. The component would be responsible for using the watson services to provide data modelling and nlp related functionality in BIT. To achieve this the watson service require data from the health system, which the BIT would provide.
 
+Checking the repository
