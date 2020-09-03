@@ -2,7 +2,7 @@
 ## Overview 
 >This project aims to build a bias identification tool for clinical recommendation from doctors and healthcare providers. This usecase focus on the general practisioners's recommendation and users of this tool includes central healthcare organisation like NHS, the patient union and other organisation that is responsible for delivering social welfare schemes. Using historical health data, B.I.T goal is to identify conscious and unconscious bias that are inherent in a doctor recommendation, given all the patient and disease features provided. In UK on average a general practitioner is responsible for providing health care service to approximately 2087 people who come from a particular geographical location. The patients belongs to different ethnicity, gender, drug addiction history, age, languages, economic status etc. The goal of the tool is to identify any bias in their recommendation which would influence the quality of treatment provided to the patient e.g. patient time,recommended diagnostic checkup, medication, medical advice etc. The tool is used by doctors or general practisioners to aid their decision making process. 
 
-To develop the tool we have to rely on publicly available data, but it is unavailable. Though [archive data](http://webarchive.nationalarchives.gov.uk) is available in the UK government website , only data description is available. The data is not public available at the moment, so require help to access real data. To proceed further we had to rely on mock data. An example of [heart-disease dataset](https://www.kaggle.com/johnsmith88/heart-disease-dataset) is used in this project to develop the tool. An additional feature called ethnicity is added to original data as the protected attribute.
+>To develop the tool we have to rely on publicly available data, but it is unavailable. Though [archive data](http://webarchive.nationalarchives.gov.uk) is available in the UK government website , only data description is available. The data is not public available at the moment, so require help to access real data. To proceed further we had to rely on mock data. An example of [heart-disease dataset](https://www.kaggle.com/johnsmith88/heart-disease-dataset) is used in this project to develop the tool. An additional feature called ethnicity is added to original data as the protected attribute.
 
 ## Work Flow
 <img src="documents/images/call_for_code_flowchart_2020.jpg" width="500" height="500" style="width:500px;height:500px;margin-left:200px;margin-top:-50px"/>
@@ -26,6 +26,7 @@ style="width:500px;height:500px;margin-left:200px;margin-right:auto"/>
 <h4>AIF360</h4>
 
 > BIT Analytic component is powered by AI Fairnedd 360 (AIF360) from IBM , a open-sourced toolkit of metrics to indentify and mitigate unwanted bias in datasets and machine learning models. Set of metrics provided by AIF360 will be implemented on our dataset, in order to evaluate biasness of protected atributes (e.g.: age, race).
+
 >The analysis component of BIT would be developed using python or spring boot and would be available to UI component as service. The component would be responsible for using the watson services to provide data modelling and nlp related functionality in BIT. To achieve this the watson service require data from the health system, which the BIT would provide.
 
 Checking the repository
