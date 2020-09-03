@@ -17,14 +17,15 @@ style="width:500px;height:500px;margin-left:200px;margin-right:auto"/>
 
 ## Implementation
 
->The BIT would have a UI component, Analysis component and Service component. 
+>The BIT would have a UI component, Analytic component powered by AIF360 and Service component. 
 
 <h4>UI</h4>
 
 >The UI component of BIT would be developed using reactjs. The UI would be used to provide the BIT analysis result when a new clinical recommendation is made by the user along with other analysis in relations to new recommendation. The UI will also manage the bias rectification process which involves justification, peer review and other recommended process by the domain experts.
 
-<h4>Analysis</h4>
+<h4>AIF360</h4>
 
+> BIT Analytic component is powered by AI Fairnedd 360 (AIF360) from IBM , a open-sourced toolkit of metrics to indentify and mitigate unwanted bias in datasets and machine learning models. Set of metrics provided by AIF360 will be implemented on our dataset, in order to evaluate biasness of protected atributes (e.g.: age, race).
 >The analysis component of BIT would be developed using python or spring boot and would be available to UI component as service. The component would be responsible for using the watson services to provide data modelling and nlp related functionality in BIT. To achieve this the watson service require data from the health system, which the BIT would provide.
 
 Checking the repository
